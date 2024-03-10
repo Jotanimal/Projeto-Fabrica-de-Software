@@ -32,3 +32,8 @@ Alguns erros continuaram presentes, pois não consegui consertar tudo até o dia
 - Caso deixe a área de nome em branco, ao invés de retornar "Nenhum digimon digitado", é retornado " "" não está no nosso banco de dados!!" pois não consegui criar uma exceção apenas para quando o nome estivesse vazio e quando o nome não estivesse presente no BD.
 
 - As imagens dos digimons aparecem como URL.
+
+--- Usuário e senha para acesso da página Admin:
+
+Usuário: admin
+Senha: senha123
