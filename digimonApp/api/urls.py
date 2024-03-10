@@ -1,11 +1,13 @@
 from rest_framework.routers import DefaultRouter
-from .viewsets import DigimonViewSet
+from .viewsets import DigimonList
 from django.urls import path, include
 
 router = DefaultRouter()
 
-router.register('Digimon', DigimonViewSet)
+# Registrando os caminhos da API
+
+router.register('Digimon', DigimonList)
 
 urlpatterns = [
-    path('api/', include(router.urls)),
+    path('digimon/', DigimonList.as_view()),
 ]

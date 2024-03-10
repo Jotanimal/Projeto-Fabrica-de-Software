@@ -4,7 +4,9 @@ from django.db import models
 
 class DigimonModel(models.Model):
 
-    nome_digimon = models.CharField(verbose_name = "Nome", max_length = 25)
-    tipo_digimon = models.CharField(verbose_name = "Tipo", max_length = 10)
-    atributo_digimon = models.CharField(verbose_name = "Atributo", max_length = 15)
-    level_digimon = models.CharField(verbose_name = "Level", max_length = 15)
+    name = models.CharField(verbose_name = "Nome", max_length = 25)
+    img = models.CharField(verbose_name = "", max_length = 100, blank = True, null = True)
+    level = models.CharField(verbose_name = "Level", max_length = 15, blank = True, null = True)
+
+    def __str__(self) -> str:
+        return f'{self.name} {self.img} {self.level}'
